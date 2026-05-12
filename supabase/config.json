@@ -1,0 +1,14 @@
+{
+  "functions": {
+    "send-scheduled-messages": {
+      "type": "scheduled",
+      "schedule": "0 * * * *",
+      "timeout": 60
+    },
+    "process-overdue-charges": {
+      "type": "scheduled",
+      "schedule": "0 9 * * *",
+      "timeout": 120
+    }
+  }
+}

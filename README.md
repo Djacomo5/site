@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CobraZap - MicroSaaS de Cobrança Inteligente
 
-## Getting Started
+Sistema automatizado de cobranças via WhatsApp para pequenas empresas brasileiras.
 
-First, run the development server:
+## Stack Técnica
+
+- **Framework**: Next.js 15 com App Router e React Server Components
+- **Linguagem**: TypeScript strict mode
+- **Estilo**: Tailwind CSS v3 + shadcn/ui
+- **Backend**: Supabase (PostgreSQL + Auth + Storage)
+- **Integrações**: Asaas (PIX/cobranças), Evolution API (WhatsApp)
+
+## Scripts
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install    # Instalar dependências
+npm run dev    # Iniciar desenvolvimento
+npm run build  # Build de produção
+npm run lint   # Verificar lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Variáveis de Ambiente
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Consulte `.env.local.example` para configurar as variáveis necessárias.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Funcionalidades
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Gestão de clientes
+- Criação de cobranças PIX via Asaas
+- Envio automático de mensagens via WhatsApp
+- Templates de mensagens personalizáveis
+- Dashboard com métricas de cobrança
+- Sistema de planos (Starter, Pro, Business)
