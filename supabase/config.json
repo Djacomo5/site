@@ -1,4 +1,5 @@
 {
+  "project_id": "zzzykgkzbsmjoisomcyc",
   "functions": {
     "send-scheduled-messages": {
       "type": "scheduled",
