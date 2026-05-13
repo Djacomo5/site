@@ -38,7 +38,7 @@ export interface DashboardStats {
 
 export interface ActivityItem {
   id: string;
-  type: 'charge_created' | 'charge_paid' | 'message_sent' | 'customer_created';
+  type: 'charge_created' | 'charge_paid' | 'message_sent' | 'customer_created' | 'message_failed';
   description: string;
   created_at: string;
 }

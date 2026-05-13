@@ -1,11 +1,11 @@
 "use client"
 
-import { CheckCircle, MessageSquare, Receipt, UserPlus, Clock } from "lucide-react"
+import { CheckCircle, MessageSquare, Receipt, UserPlus, Clock, AlertCircle } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 interface ActivityItem {
   id: string
-  type: "charge_created" | "charge_paid" | "message_sent" | "customer_created"
+  type: "charge_created" | "charge_paid" | "message_sent" | "customer_created" | "message_failed"
   description: string
   time: string
 }
@@ -19,6 +19,7 @@ const activityIcons = {
   charge_paid: CheckCircle,
   message_sent: MessageSquare,
   customer_created: UserPlus,
+  message_failed: AlertCircle,
 }
 
 const activityColors = {
@@ -26,6 +27,7 @@ const activityColors = {
   charge_paid: "text-green-600 bg-green-100",
   message_sent: "text-purple-600 bg-purple-100",
   customer_created: "text-orange-600 bg-orange-100",
+  message_failed: "text-red-600 bg-red-100",
 }
 
 export function ActivityTimeline({ activities }: ActivityTimelineProps) {
